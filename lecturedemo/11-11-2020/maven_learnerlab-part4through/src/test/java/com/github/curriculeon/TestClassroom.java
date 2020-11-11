@@ -13,8 +13,7 @@ public class TestClassroom {
         Classroom classroom = Classroom.INSTANCE;
         Instructors instructors = Instructors.getInstance();
         Students students = Students.getInstance();
-        Person teacherAsPerson = instructors.findById(1L);
-        Teacher teacherAsTeacher = (Teacher)teacherAsPerson;
+        Instructor teacherAsTeacher = instructors.findById(1L);
         Map<Student, Double> preStudyMap = classroom.getStudyMap();
         Double numberOfHoursToTeach = 9999.0;
         Double expectedNumberOfHoursLearned = numberOfHoursToTeach / students.count();

@@ -1,6 +1,6 @@
 package com.github.curriculeon;
 
-public class Instructors extends People {
+public class Instructors extends People<Instructor> {
     private static Instructors INSTANCE;
 
     private Instructors() {

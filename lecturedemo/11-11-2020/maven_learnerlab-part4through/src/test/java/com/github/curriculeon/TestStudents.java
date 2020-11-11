@@ -13,7 +13,7 @@ public class TestStudents {
         String[] nameArray = "Michal,C Avalo,Trevor,Neely Mann,Brandt Campbell,Brian Loveless".split(",");
         List<String> nameList = Arrays.asList(nameArray);
         // when
-        for(Person person : Students.getInstance()) {
+        for(Student person : Students.getInstance()) {
             String personName = person.getName();
             // then
             Assert.assertTrue(nameList.contains(personName));
