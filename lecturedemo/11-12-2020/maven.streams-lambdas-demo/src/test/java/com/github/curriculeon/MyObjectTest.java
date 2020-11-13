@@ -1,18 +1,32 @@
 package com.github.curriculeon;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.StringJoiner;
+import java.util.function.Consumer;
 
 public class MyObjectTest {
     @Test
-    public void testRun() { // TODO
-        // Given
+    public void testRunnable() {
+        Long randomValue = System.nanoTime();
+        Runnable someRunnableObject = () -> {
+            System.out.println("Hey my randomValue was = " + randomValue);
+        };
+
         MyObject myObject = new MyObject();
+        myObject.invokeRunMethod(someRunnableObject);
+    }
 
-        // when
-        myObject.run();
+    @Test
+    public void testConsumer() {
+        Consumer<String> someConsumer = (String someValueToBeConsumed) -> {
+            System.out.println("Hey my randomValue was = " + someValueToBeConsumed);
+        };
 
-        //then
-        Assert.assertNotNull(myObject.toString());
+        MyObject myObject = new MyObject();
+        myObject.invokeAcceptMethod(someConsumer, new StringJoiner("\n")
+                .add("This is the value that was consumed")
+                .add("Yummy. I like consuming values")
+                .toString());
     }
 }
