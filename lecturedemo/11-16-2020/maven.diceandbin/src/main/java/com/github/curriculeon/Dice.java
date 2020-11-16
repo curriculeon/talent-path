@@ -1,6 +1,9 @@
 package com.github.curriculeon;
 
-public class Dice {
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class Dice implements  Iterable<Die> {
     private final Die[] dieArray;
 
     /**
@@ -48,5 +51,10 @@ public class Dice {
     public Integer getRollMax() {
         int maxFaceValue = dieArray[0].getNumberOfFaces();
         return getRollMin() * maxFaceValue;
+    }
+
+    @Override
+    public Iterator<Die> iterator() {
+        return Arrays.asList(dieArray).iterator();
     }
 }
