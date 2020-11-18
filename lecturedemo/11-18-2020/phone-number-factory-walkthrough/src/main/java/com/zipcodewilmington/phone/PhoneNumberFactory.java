@@ -60,6 +60,7 @@ public final class PhoneNumberFactory {
      * @throws InvalidPhoneNumberFormatException - thrown if phoneNumberString does not match acceptable format
      */
     public static PhoneNumber createPhoneNumber(String phoneNumberString) throws InvalidPhoneNumberFormatException {
+        logger.info(String.format("Creating phone number with value [ %s ]", phoneNumberString));
         PhoneNumber result = new PhoneNumber(phoneNumberString);
         return result;
     }
