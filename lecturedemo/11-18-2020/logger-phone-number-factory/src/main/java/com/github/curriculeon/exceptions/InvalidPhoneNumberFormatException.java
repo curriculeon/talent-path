@@ -1,4 +1,4 @@
-package com.zipcodewilmington.exceptions;
+package com.github.curriculeon.exceptions;
 
 /**
  * Created by leon on 5/10/17.

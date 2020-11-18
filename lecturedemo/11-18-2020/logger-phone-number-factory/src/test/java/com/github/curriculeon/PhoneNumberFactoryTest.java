@@ -1,23 +1,20 @@
-package com.zipcodewilmington;
+package com.github.curriculeon;
 
-import com.zipcodewilmington.exceptions.InvalidPhoneNumberFormatException;
-import com.zipcodewilmington.phone.PhoneNumber;
-import com.zipcodewilmington.phone.PhoneNumberFactory;
+import com.github.curriculeon.exceptions.InvalidPhoneNumberFormatException;
+import com.github.curriculeon.phone.PhoneNumber;
+import com.github.curriculeon.phone.PhoneNumberFactory;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created by leon on 5/9/17.
  */
 public class PhoneNumberFactoryTest {
+    private PhoneNumberFactory phoneNumberFactory = new PhoneNumberFactory();
 
     @Test(expected = InvalidPhoneNumberFormatException.class)
     public void testInvalidPhoneNumberFormatException() throws InvalidPhoneNumberFormatException {
-        PhoneNumberFactory.createPhoneNumber("-1");
+        phoneNumberFactory.createPhoneNumber("-1");
     }
 
     @Test
@@ -28,7 +25,7 @@ public class PhoneNumberFactoryTest {
         int phoneLineCode = 0;
 
         // : When
-        PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
+        PhoneNumber phoneNumber = phoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
 
         // : Then
         Assert.assertEquals(null, phoneNumber);
@@ -42,7 +39,7 @@ public class PhoneNumberFactoryTest {
         int phoneLineCode = 5555;
 
         // : When
-        PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
+        PhoneNumber phoneNumber = phoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
 
         // : Then
         Assert.assertEquals(phoneNumber.getAreaCode(), areaCode.toString());
@@ -56,7 +53,7 @@ public class PhoneNumberFactoryTest {
         int phoneLineCode = 5555;
 
         // : When
-        PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
+        PhoneNumber phoneNumber = phoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
 
         // : Then
         Assert.assertEquals(phoneNumber.getCentralOfficeCode(), centralOfficeCode.toString());
@@ -71,7 +68,7 @@ public class PhoneNumberFactoryTest {
         Integer phoneLineCode = 5555;
 
         // : When
-        PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
+        PhoneNumber phoneNumber = phoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
 
         // : Then
         Assert.assertEquals(phoneNumber.getPhoneLineCode(), phoneLineCode.toString());
@@ -82,7 +79,7 @@ public class PhoneNumberFactoryTest {
         for (int i = 0; i < 999; i++) {
             // : Given
             // : When
-            PhoneNumber phoneNumber = PhoneNumberFactory.createRandomPhoneNumber();
+            PhoneNumber phoneNumber = phoneNumberFactory.createRandomPhoneNumber();
 
             // : Then
             Assert.assertTrue(phoneNumber != null);

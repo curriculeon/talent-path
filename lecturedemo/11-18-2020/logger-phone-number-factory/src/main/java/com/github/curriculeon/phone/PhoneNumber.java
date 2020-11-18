@@ -1,6 +1,6 @@
-package com.zipcodewilmington.phone;
+package com.github.curriculeon.phone;
 
-import com.zipcodewilmington.exceptions.InvalidPhoneNumberFormatException;
+import com.github.curriculeon.exceptions.InvalidPhoneNumberFormatException;
 
 /**
  * Created by leon on 5/10/17.
