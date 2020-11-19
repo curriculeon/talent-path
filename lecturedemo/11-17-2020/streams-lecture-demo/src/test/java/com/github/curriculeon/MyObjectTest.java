@@ -1,14 +1,35 @@
 package com.github.curriculeon;
 
-import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class MyObjectTest {
+    @Test
+    public void compareFunctionToprediate() {
+        Function<Double, Boolean> functionOfDoubleBoolean = number -> number > 0.5;
+        Predicate<Double> predicateEquivalent = number -> number > 0.5;
+    }
+
+    @Test
+    public void generateFilterLimitPrintMultiline() {
+        Supplier<Double> rng = Math::random;
+        Stream<Double> doubleStream = Stream.generate(rng);
+        Predicate<Double> doublePredicate = number -> number > 0.5;
+        Stream<Double> doubleStreamFiltered = doubleStream.filter(doublePredicate);
+        Stream<Double> doubleStreamFilteredLimited = doubleStreamFiltered.limit(999);
+        Consumer<Double> doubleConsumer = System.out::println;
+        doubleStreamFilteredLimited.forEach(doubleConsumer);
+    }
+
     @Test
     public void generateFilterLimitPrint() {
         Stream
@@ -58,7 +79,7 @@ public class MyObjectTest {
         Stream
                 .generate(() -> {
                     ThreadLocalRandom rng = ThreadLocalRandom.current();
-                    int randomVal = rng.nextInt(0,100);
+                    int randomVal = rng.nextInt(0, 100);
                     return randomVal;
                 })
                 .limit(150)

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb2424d0-f081-456d-bad3-8b85cd54f4cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/README-Sample.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/src/main/java/com/github/curriculeon/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/src/main/java/com/github/curriculeon/MyObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven.projecttemplate/src/test/java/com/github/curriculeon/MyObjectTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1kOEVHXfzkBK0XKWkie1SqI9I0l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb2424d0-f081-456d-bad3-8b85cd54f4cc" name="Default Changelist" comment="" />
+      <created>1605563260171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605563260171</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
