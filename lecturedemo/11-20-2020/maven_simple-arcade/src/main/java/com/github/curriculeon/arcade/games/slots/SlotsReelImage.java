@@ -24,7 +24,6 @@ public enum SlotsReelImage {
     }
 
     static SlotsReelImage getRandom() {
-        //TODO - replace values() with ReelImage[] object
         return RandomUtils.selectElement(values());
     }
 
