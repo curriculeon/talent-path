@@ -35,11 +35,11 @@ public class RedOrBlackGame implements GameInterface {
     @Override
     public void run() {
         IOConsole console = new IOConsole(AnsiColor.CYAN);
-        deck.shuffle();
-        Card card = deck.pop();
-        for (PlayerInterface player : playerList) {
-            String userInput;
-            do {
+        String userInput = null;
+        do {
+            deck.shuffle();
+            Card card = deck.pop();
+            for (PlayerInterface player : playerList) {
                 userInput = player.play();
                 boolean userInputIsRed = "red".equalsIgnoreCase(userInput);
                 boolean userInputIsBlack = "black".equalsIgnoreCase(userInput);
@@ -52,11 +52,13 @@ public class RedOrBlackGame implements GameInterface {
                 if (userInputIsValid) {
                     if (userIsCorrect) {
                         console.println("You were correct!");
-                        console.println("The value of the card was [ %s ]", card.toString());
+                    } else {
+                        console.println("You were incorrect!");
                     }
+                    console.println("The value of the card was [ %s ]", card.toString());
                 }
-            } while(!"quit".equalsIgnoreCase(userInput));
-        }
-        deck.push(card);
+            }
+            deck.push(card);
+        } while (!"quit".equalsIgnoreCase(userInput));
     }
 }

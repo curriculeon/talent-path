@@ -80,6 +80,8 @@ public class Arcade implements Runnable {
         GameInterface game = (GameInterface) gameObject;
         PlayerInterface player = (PlayerInterface) playerObject;
         game.add(player);
+        game.setup();
         game.run();
+        game.tearDown();
     }
 }

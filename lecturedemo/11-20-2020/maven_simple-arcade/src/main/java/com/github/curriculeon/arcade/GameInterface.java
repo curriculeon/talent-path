@@ -17,7 +17,21 @@ public interface GameInterface extends Runnable {
     void remove(PlayerInterface player);
 
     /**
+     * specifies what to do when the game has began
+     */
+    default void setup() {
+
+    }
+
+    /**
      * specifies how the game will run
      */
     void run();
+
+    /**
+     * specifies what to do when the game is completed
+     */
+    default void tearDown() {
+
+    }
 }
