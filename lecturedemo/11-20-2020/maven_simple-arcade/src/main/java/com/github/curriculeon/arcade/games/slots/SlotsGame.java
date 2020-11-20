@@ -11,10 +11,6 @@ import java.util.List;
  * Created by leon on 7/21/2020.
  */
 public class SlotsGame implements GameInterface<SlotsPlayer> {
-    private SlotsReelImage image1;
-    private SlotsReelImage image2;
-    private SlotsReelImage image3;
-    private IOConsole console = new IOConsole();
     private List<SlotsPlayer> playerList;
 
 
@@ -26,12 +22,6 @@ public class SlotsGame implements GameInterface<SlotsPlayer> {
         this.playerList = playerList;
     }
 
-    public void spin() {
-        this.image1 = SlotsReelImage.getRandom();
-        this.image2 = SlotsReelImage.getRandom();
-        this.image3 = SlotsReelImage.getRandom();
-    }
-
     @Override
     public List<SlotsPlayer> getPlayerList() {
         return playerList;
@@ -39,12 +29,18 @@ public class SlotsGame implements GameInterface<SlotsPlayer> {
 
     @Override
     public void run() {
+        IOConsole console = new IOConsole();
         for (PlayerInterface player : playerList) {
+            SlotsReelImage image1 = null;
+            SlotsReelImage image2 = null;
+            SlotsReelImage image3 = null;
             String userInput;
             do {
                 userInput = player.play();
                 if ("pull-lever".equalsIgnoreCase(userInput)) {
-                    spin();
+                    image1 = SlotsReelImage.getRandom();
+                    image2 = SlotsReelImage.getRandom();
+                    image3 = SlotsReelImage.getRandom();
                 }  else if("view-slots".equalsIgnoreCase(userInput)) {
                     console.println("Results: || %s || %s || %s", image1, image2, image3);
                 } else if("exit".equalsIgnoreCase(userInput)) {
