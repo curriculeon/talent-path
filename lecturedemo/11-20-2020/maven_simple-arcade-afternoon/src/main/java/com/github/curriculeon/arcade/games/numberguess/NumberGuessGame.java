@@ -1,7 +1,6 @@
 package com.github.curriculeon.arcade.games.numberguess;
 
 import com.github.curriculeon.arcade.games.AbstractGame;
-import com.github.curriculeon.arcade.games.GameInterface;
 import com.github.curriculeon.arcade.games.PlayerInterface;
 import com.github.curriculeon.utils.AnsiColor;
 import com.github.curriculeon.utils.IOConsole;
@@ -21,7 +20,7 @@ public class NumberGuessGame extends AbstractGame<NumberGuessPlayer> {
         Integer mysteryNumber = ThreadLocalRandom.current().nextInt(0, 10);
         for (PlayerInterface player : getPlayerList()) {
             Integer numberGuessedByPlayer = player.play();
-            if (numberGuessedByPlayer == mysteryNumber) {
+            if (numberGuessedByPlayer.equals(mysteryNumber)) {
                 winnerList.add(player);
             }
         }
