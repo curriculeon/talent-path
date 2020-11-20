@@ -13,7 +13,6 @@ import java.util.List;
 public class SlotsGame implements GameInterface<SlotsPlayer> {
     private List<SlotsPlayer> playerList;
 
-
     public SlotsGame() {
         this(new ArrayList<>());
     }
@@ -41,9 +40,9 @@ public class SlotsGame implements GameInterface<SlotsPlayer> {
                     image1 = SlotsReelImage.getRandom();
                     image2 = SlotsReelImage.getRandom();
                     image3 = SlotsReelImage.getRandom();
-                }  else if("view-slots".equalsIgnoreCase(userInput)) {
+                } else if ("view-slots".equalsIgnoreCase(userInput)) {
                     console.println("Results: || %s || %s || %s", image1, image2, image3);
-                } else if("exit".equalsIgnoreCase(userInput)) {
+                } else if ("exit".equalsIgnoreCase(userInput)) {
                     break;
                 }
             } while (!"exit".equalsIgnoreCase(userInput));
