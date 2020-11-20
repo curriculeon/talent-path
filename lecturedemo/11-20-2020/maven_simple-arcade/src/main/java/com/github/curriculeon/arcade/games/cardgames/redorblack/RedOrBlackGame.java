@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RedOrBlackGame implements GameInterface<RedOrBlackPlayer> {
-    private final Deck deck = new Deck();
     private final List<RedOrBlackPlayer> playerList;
 
     public RedOrBlackGame() {
@@ -29,8 +28,9 @@ public class RedOrBlackGame implements GameInterface<RedOrBlackPlayer> {
 
     @Override
     public void run() {
-        IOConsole console = new IOConsole(AnsiColor.CYAN);
         String userInput = null;
+        Deck deck = new Deck();
+        IOConsole console = new IOConsole(AnsiColor.CYAN);
         do {
             deck.shuffle();
             Card card = deck.pop();
