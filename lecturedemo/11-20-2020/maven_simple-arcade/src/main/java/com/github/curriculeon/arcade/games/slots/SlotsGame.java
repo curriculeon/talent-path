@@ -43,17 +43,12 @@ public class SlotsGame implements GameInterface<SlotsPlayer> {
             String userInput;
             do {
                 userInput = player.play();
-                switch (userInput.toLowerCase()) {
-                    case "pull-lever":
-                        spin();
-                        break;
-
-                    case "view-slots":
-                        console.println("Results: || %s || %s || %s", image1, image2, image3);
-                        break;
-
-                    case "exit":
-                        break;
+                if ("pull-lever".equalsIgnoreCase(userInput)) {
+                    spin();
+                }  else if("view-slots".equalsIgnoreCase(userInput)) {
+                    console.println("Results: || %s || %s || %s", image1, image2, image3);
+                } else if("exit".equalsIgnoreCase(userInput)) {
+                    break;
                 }
             } while (!"exit".equalsIgnoreCase(userInput));
         }
