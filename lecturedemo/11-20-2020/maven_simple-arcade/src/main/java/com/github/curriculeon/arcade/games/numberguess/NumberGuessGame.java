@@ -13,14 +13,19 @@ import java.util.concurrent.ThreadLocalRandom;
  * Created by leon on 7/21/2020.
  */
 public class NumberGuessGame implements GameInterface {
-    private final List<NumberGuessPlayer> players;
+    private final List<PlayerInterface> players;
 
     public NumberGuessGame() {
         this(new ArrayList<>());
     }
 
-    public NumberGuessGame(List<NumberGuessPlayer> players) {
+    public NumberGuessGame(List<PlayerInterface> players) {
         this.players = players;
+    }
+
+    @Override
+    public List<PlayerInterface> getPlayerList() {
+        return players;
     }
 
     @Override
@@ -36,9 +41,9 @@ public class NumberGuessGame implements GameInterface {
     @Override
     public void run() {
         IOConsole console = new IOConsole(AnsiColor.RED);
-        List<NumberGuessPlayer> winnerList = new ArrayList<>();
+        List<PlayerInterface> winnerList = new ArrayList<>();
         Integer mysteryNumber = ThreadLocalRandom.current().nextInt(0, 10);
-        for (NumberGuessPlayer player : players) {
+        for (PlayerInterface player : players) {
             Integer numberGuessedByPlayer = player.play();
             if (numberGuessedByPlayer == mysteryNumber) {
                 winnerList.add(player);

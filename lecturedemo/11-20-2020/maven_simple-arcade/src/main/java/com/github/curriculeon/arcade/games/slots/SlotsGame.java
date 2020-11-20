@@ -11,18 +11,18 @@ import java.util.List;
  * Created by leon on 7/21/2020.
  */
 public class SlotsGame implements GameInterface {
-    private List<SlotsPlayer> playerList;
-    SlotsReelImage image1;
-    SlotsReelImage image2;
-    SlotsReelImage image3;
-    IOConsole console = new IOConsole();
+    private SlotsReelImage image1;
+    private SlotsReelImage image2;
+    private SlotsReelImage image3;
+    private IOConsole console = new IOConsole();
+    private List<PlayerInterface> playerList;
 
 
     public SlotsGame() {
         this(new ArrayList<>());
     }
 
-    public SlotsGame(List<SlotsPlayer> playerList) {
+    public SlotsGame(List<PlayerInterface> playerList) {
         this.playerList = playerList;
     }
 
@@ -30,6 +30,11 @@ public class SlotsGame implements GameInterface {
         this.image1 = SlotsReelImage.getRandom();
         this.image2 = SlotsReelImage.getRandom();
         this.image3 = SlotsReelImage.getRandom();
+    }
+
+    @Override
+    public List<PlayerInterface> getPlayerList() {
+        return playerList;
     }
 
     @Override
@@ -44,7 +49,7 @@ public class SlotsGame implements GameInterface {
 
     @Override
     public void run() {
-        for (SlotsPlayer player : playerList) {
+        for (PlayerInterface player : playerList) {
             String userInput;
             do {
                 userInput = player.play();

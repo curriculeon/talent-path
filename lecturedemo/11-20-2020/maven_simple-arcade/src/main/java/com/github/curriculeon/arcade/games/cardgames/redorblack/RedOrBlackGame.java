@@ -23,6 +23,11 @@ public class RedOrBlackGame implements GameInterface {
     }
 
     @Override
+    public List<PlayerInterface> getPlayerList() {
+        return playerList;
+    }
+
+    @Override
     public void add(PlayerInterface player) {
         playerList.add(player);
     }
