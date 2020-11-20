@@ -10,19 +10,19 @@ import java.util.List;
 /**
  * Created by leon on 7/21/2020.
  */
-public class SlotsGame implements GameInterface {
+public class SlotsGame implements GameInterface<SlotsPlayer> {
     private SlotsReelImage image1;
     private SlotsReelImage image2;
     private SlotsReelImage image3;
     private IOConsole console = new IOConsole();
-    private List<PlayerInterface> playerList;
+    private List<SlotsPlayer> playerList;
 
 
     public SlotsGame() {
         this(new ArrayList<>());
     }
 
-    public SlotsGame(List<PlayerInterface> playerList) {
+    public SlotsGame(List<SlotsPlayer> playerList) {
         this.playerList = playerList;
     }
 
@@ -33,7 +33,7 @@ public class SlotsGame implements GameInterface {
     }
 
     @Override
-    public List<PlayerInterface> getPlayerList() {
+    public List<SlotsPlayer> getPlayerList() {
         return playerList;
     }
 

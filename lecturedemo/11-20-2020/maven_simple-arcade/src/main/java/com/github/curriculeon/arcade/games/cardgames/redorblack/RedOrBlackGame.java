@@ -10,20 +10,20 @@ import com.github.curriculeon.utils.IOConsole;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RedOrBlackGame implements GameInterface {
+public class RedOrBlackGame implements GameInterface<RedOrBlackPlayer> {
     private final Deck deck = new Deck();
-    private final List<PlayerInterface> playerList;
+    private final List<RedOrBlackPlayer> playerList;
 
     public RedOrBlackGame() {
         this(new ArrayList<>());
     }
 
-    public RedOrBlackGame(List<PlayerInterface> playerList) {
+    public RedOrBlackGame(List<RedOrBlackPlayer> playerList) {
         this.playerList = playerList;
     }
 
     @Override
-    public List<PlayerInterface> getPlayerList() {
+    public List<RedOrBlackPlayer> getPlayerList() {
         return playerList;
     }
 
