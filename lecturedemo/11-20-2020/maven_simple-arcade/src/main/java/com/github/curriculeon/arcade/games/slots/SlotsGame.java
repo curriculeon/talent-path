@@ -41,7 +41,7 @@ public class SlotsGame implements GameInterface<SlotsPlayer> {
                     image2 = SlotsReelImage.getRandom();
                     image3 = SlotsReelImage.getRandom();
                 } else if ("view-slots".equalsIgnoreCase(userInput)) {
-                    console.println("Results: || %s || %s || %s", image1, image2, image3);
+                    console.println("|| %s || %s || %s ||", image1, image2, image3);
                 } else if ("exit".equalsIgnoreCase(userInput)) {
                     break;
                 }
