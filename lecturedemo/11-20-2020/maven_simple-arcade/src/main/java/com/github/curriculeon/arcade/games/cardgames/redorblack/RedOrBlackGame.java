@@ -28,16 +28,6 @@ public class RedOrBlackGame implements GameInterface {
     }
 
     @Override
-    public void add(PlayerInterface player) {
-        playerList.add(player);
-    }
-
-    @Override
-    public void remove(PlayerInterface player) {
-        playerList.remove(player);
-    }
-
-    @Override
     public void run() {
         IOConsole console = new IOConsole(AnsiColor.CYAN);
         String userInput = null;

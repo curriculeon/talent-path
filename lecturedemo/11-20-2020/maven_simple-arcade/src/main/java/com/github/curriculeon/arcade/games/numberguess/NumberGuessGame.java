@@ -29,16 +29,6 @@ public class NumberGuessGame implements GameInterface {
     }
 
     @Override
-    public void add(PlayerInterface player) {
-        players.add((NumberGuessPlayer) player);
-    }
-
-    @Override
-    public void remove(PlayerInterface player) {
-        players.remove(player);
-    }
-
-    @Override
     public void run() {
         IOConsole console = new IOConsole(AnsiColor.RED);
         List<PlayerInterface> winnerList = new ArrayList<>();

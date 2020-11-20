@@ -38,16 +38,6 @@ public class SlotsGame implements GameInterface {
     }
 
     @Override
-    public void add(PlayerInterface player) {
-        playerList.add((SlotsPlayer) player);
-    }
-
-    @Override
-    public void remove(PlayerInterface player) {
-        playerList.remove(player);
-    }
-
-    @Override
     public void run() {
         for (PlayerInterface player : playerList) {
             String userInput;
