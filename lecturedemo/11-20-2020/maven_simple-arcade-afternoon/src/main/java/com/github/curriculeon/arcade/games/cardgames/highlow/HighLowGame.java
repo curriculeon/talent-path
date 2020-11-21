@@ -20,12 +20,12 @@ public class HighLowGame extends AbstractGame<HighLowPlayer> {
                 userInput = player.play();
                 Card cardToCompareAgainst = deck.pop();
                 int cardToCompareAgainstValue = cardToCompareAgainst.getRank().getPrimaryValue();
-                boolean cardToCompareAgainstIsEqual = cardToCompareAgainstValue == visibleCardValue;
-                boolean cardToCompareAgainstIsHigher = cardToCompareAgainstValue > visibleCardValue;
-                boolean cardToCompareAgainstIsLower = (!cardToCompareAgainstIsHigher) && (!cardToCompareAgainstIsEqual);
-                boolean hasWonWithEven = "even".equalsIgnoreCase(userInput) && cardToCompareAgainstIsEqual;
-                boolean hasWonWithLow = "low".equalsIgnoreCase(userInput) && cardToCompareAgainstIsLower;
-                boolean hasWonWithHigh = "high".equalsIgnoreCase(userInput) && cardToCompareAgainstIsHigher;
+                boolean isCardToCompareAgainstEqual = cardToCompareAgainstValue == visibleCardValue;
+                boolean isCardToCompareAgainstHigher = cardToCompareAgainstValue > visibleCardValue;
+                boolean isCardToCompareAgainstLower = (!isCardToCompareAgainstHigher) && (!isCardToCompareAgainstEqual);
+                boolean hasWonWithEven = "even".equalsIgnoreCase(userInput) && isCardToCompareAgainstEqual;
+                boolean hasWonWithLow = "low".equalsIgnoreCase(userInput) && isCardToCompareAgainstLower;
+                boolean hasWonWithHigh = "high".equalsIgnoreCase(userInput) && isCardToCompareAgainstHigher;
                 boolean hasWon = hasWonWithEven || hasWonWithHigh || hasWonWithLow;
 
                 if (hasWon) {
