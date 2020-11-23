@@ -1,4 +1,4 @@
-package com.github.curriculeon.arcade.slots;
+package com.github.curriculeon.arcade.games.slots;
 
 
 import com.github.curriculeon.utils.RandomUtils;
@@ -24,7 +24,6 @@ public enum SlotsReelImage {
     }
 
     static SlotsReelImage getRandom() {
-        //TODO - replace values() with ReelImage[] object
         return RandomUtils.selectElement(values());
     }
 

@@ -12,9 +12,9 @@ import java.util.List;
  */
 public class SlotsGame implements GameInterface {
     private List<SlotsPlayer> playerList;
-    SlotReel.ReelImage image1;
-    SlotReel.ReelImage image2;
-    SlotReel.ReelImage image3;
+    SlotsReelImage image1;
+    SlotsReelImage image2;
+    SlotsReelImage image3;
     IOConsole console = new IOConsole();
 
 
@@ -27,9 +27,9 @@ public class SlotsGame implements GameInterface {
     }
 
     public void spin() {
-        this.image1 = SlotReel.spin();
-        this.image2 = SlotReel.spin();
-        this.image3 = SlotReel.spin();
+        this.image1 = SlotsReelImage.getRandom();
+        this.image2 = SlotsReelImage.getRandom();
+        this.image3 = SlotsReelImage.getRandom();
     }
 
     @Override
@@ -60,7 +60,7 @@ public class SlotsGame implements GameInterface {
                     case "exit":
                         break;
                 }
-            } while(!"exit".equalsIgnoreCase(userInput));
+            } while (!"exit".equalsIgnoreCase(userInput));
         }
     }
 }
