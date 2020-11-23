@@ -8,7 +8,7 @@ import com.github.curriculeon.utils.IOConsole;
 public class HighLowGame extends AbstractGame<HighLowPlayer> {
     @Override
     public void run() {
-        IOConsole console = new IOConsole();
+        IOConsole console = getIOConsole();
         Deck deck = new Deck();
         String userInput = null;
         do {

@@ -12,7 +12,7 @@ public class RedOrBlackGame extends AbstractGame<RedOrBlackPlayer> {
     public void run() {
         String userInput = null;
         Deck deck = new Deck();
-        IOConsole console = new IOConsole(AnsiColor.CYAN);
+        IOConsole console = getIOConsole(AnsiColor.CYAN);
         do {
             deck.shuffle();
             Card card = deck.pop();

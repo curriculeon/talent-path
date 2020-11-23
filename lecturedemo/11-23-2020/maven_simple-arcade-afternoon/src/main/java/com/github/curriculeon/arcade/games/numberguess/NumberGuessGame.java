@@ -15,7 +15,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class NumberGuessGame extends AbstractGame<NumberGuessPlayer> {
     @Override
     public void run() {
-        IOConsole console = new IOConsole(AnsiColor.RED);
+        IOConsole console = getIOConsole(AnsiColor.RED);
         Integer mysteryNumber = ThreadLocalRandom.current().nextInt(0, 10);
         for (NumberGuessPlayer player : getPlayerList()) {
             Integer numberGuessedByPlayer = player.play();
