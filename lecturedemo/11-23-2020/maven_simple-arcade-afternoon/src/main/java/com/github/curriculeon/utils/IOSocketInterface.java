@@ -5,11 +5,11 @@ import java.io.PrintStream;
 
 public interface IOSocketInterface {
     default IOConsole getIOConsole() {
-        return new IOConsole();
+        return getIOConsole(AnsiColor.AUTO);
     }
 
     default IOConsole getIOConsole(AnsiColor color) {
-        return new IOConsole(color);
+        return getIOConsole(color, System.in, System.out);
     }
 
     default IOConsole getIOConsole(AnsiColor color, InputStream inputStream, PrintStream outputStream) {

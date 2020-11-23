@@ -18,7 +18,7 @@ public enum AnsiColor {
     private final String color;
 
     AnsiColor(int ansiNumber) {
-        this.color = "[\u001B[" + ansiNumber + "m";
+        this.color = "\u001B[" + ansiNumber + "m";
     }
 
     public String getColor() {

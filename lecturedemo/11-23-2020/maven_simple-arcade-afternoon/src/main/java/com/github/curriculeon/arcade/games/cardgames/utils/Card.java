@@ -1,5 +1,7 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
+import java.awt.*;
+
 public class Card {
     private final Suit suit;
     private final Rank rank;
@@ -27,5 +29,9 @@ public class Card {
                 .name()
                 .concat(" of ")
                 .concat(suit.name());
+    }
+
+    public String getColor() {
+        return suit.getColor();
     }
 }

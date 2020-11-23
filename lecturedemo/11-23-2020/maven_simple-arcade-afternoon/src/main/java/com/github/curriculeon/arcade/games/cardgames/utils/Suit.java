@@ -1,5 +1,7 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
+import java.awt.*;
+
 public enum Suit {
     HEARTS(true),
     DIAMONDS(true),
@@ -14,6 +16,14 @@ public enum Suit {
 
     Suit(boolean isRed) {
         this.isRed = isRed;
+    }
+
+    public String getColor() {
+        if(isRed()) {
+            return "RED";
+        } else {
+            return "BLACK";
+        }
     }
 
     public boolean isRed() {

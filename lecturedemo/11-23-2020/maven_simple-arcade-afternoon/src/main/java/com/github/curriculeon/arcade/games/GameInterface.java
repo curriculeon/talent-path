@@ -43,6 +43,10 @@ public interface GameInterface<SomePlayerType extends PlayerInterface> extends I
      * specifies what to do when the game is completed
      */
     default void tearDown() {
+        removeAllPlayers();
+    }
 
+    default void removeAllPlayers() {
+        getPlayerList().clear();
     }
 }
