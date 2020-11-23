@@ -1,11 +1,13 @@
 package com.github.curriculeon.arcade.games;
 
+import com.github.curriculeon.utils.IOSocketInterface;
+
 import java.util.List;
 
 /**
  * Created by leon on 7/21/2020.
  */
-public interface GameInterface<SomePlayerType extends PlayerInterface> extends Runnable {
+public interface GameInterface<SomePlayerType extends PlayerInterface> extends IOSocketInterface, Runnable {
     List<SomePlayerType> getWinnerList();
     List<SomePlayerType> getPlayerList();
 
