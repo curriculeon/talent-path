@@ -26,14 +26,13 @@ public class GetWinnerListTest {
                 String userInput = mysteryNumber.toString();
                 byte[] inputBytes = userInput.getBytes();
                 ByteArrayInputStream inputByteArray = new ByteArrayInputStream(inputBytes);
-                IOConsole console = new IOConsole(AnsiColor.AUTO, inputByteArray, System.out) {
+                return new IOConsole(AnsiColor.AUTO, inputByteArray, System.out) {
                     @Override
                     public String getStringInput(String prompt, Object... args) {
                         new IOConsole().println(userInput);
                         return super.getStringInput(prompt, args);
                     }
                 };
-                return console;
             }
         };
         numberGuessGame.add(numberGuessPlayer);

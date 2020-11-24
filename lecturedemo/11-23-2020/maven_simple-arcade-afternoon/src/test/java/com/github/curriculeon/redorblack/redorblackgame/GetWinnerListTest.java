@@ -30,14 +30,13 @@ public class GetWinnerListTest {
                 String userInput = redOrBlackGame.getCard().getSuit().getColor();
                 byte[] inputBytes = userInput.getBytes();
                 ByteArrayInputStream inputByteArray = new ByteArrayInputStream(inputBytes);
-                IOConsole console = new IOConsole(color, inputByteArray, printStream) {
+                return new IOConsole(color, inputByteArray, printStream) {
                     @Override
                     public String getStringInput(String prompt, Object... args) {
                         new IOConsole().println(userInput);
                         return super.getStringInput(prompt, args);
                     }
                 };
-                return console;
             }
         };
         redOrBlackGame.add(redOrBlackPlayer);
