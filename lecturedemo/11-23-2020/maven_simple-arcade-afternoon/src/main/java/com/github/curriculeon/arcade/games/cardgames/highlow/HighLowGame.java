@@ -6,18 +6,31 @@ import com.github.curriculeon.arcade.games.cardgames.utils.Deck;
 import com.github.curriculeon.utils.IOConsole;
 
 public class HighLowGame extends AbstractGame<HighLowPlayer> {
+    private final Deck deck;
+
+    public HighLowGame() {
+        this(new Deck());
+    }
+
+    public HighLowGame(Deck deck) {
+        this.deck = deck;
+    }
+
+    @Override
+    public void setup() {
+        getDeck().shuffle();
+    }
+
     @Override
     public void run() {
         IOConsole console = getIOConsole();
-        Deck deck = new Deck();
         String userInput = null;
         for (HighLowPlayer player : getPlayerList()) {
-            deck.shuffle();
-            Card visibleCard = deck.pop();
+            Card visibleCard = getDeck().pop();
             int visibleCardValue = visibleCard.getRank().getPrimaryValue();
             console.println("The current visible card is [ %s ]", visibleCard);
             userInput = player.play();
-            Card cardToCompareAgainst = deck.pop();
+            Card cardToCompareAgainst = getDeck().pop();
             int cardToCompareAgainstValue = cardToCompareAgainst.getRank().getPrimaryValue();
             boolean isCardToCompareAgainstEqual = cardToCompareAgainstValue == visibleCardValue;
             boolean isCardToCompareAgainstHigher = cardToCompareAgainstValue > visibleCardValue;
@@ -33,8 +46,11 @@ public class HighLowGame extends AbstractGame<HighLowPlayer> {
                 console.println("You lose.");
             }
             console.println("The next card value was [ %s ]", cardToCompareAgainst);
-            deck.push(visibleCard);
-            deck.push(cardToCompareAgainst);
+            getDeck().push(visibleCard);
+            getDeck().push(cardToCompareAgainst);
         }
+    }
+    public Deck getDeck() {
+        return deck;
     }
 }

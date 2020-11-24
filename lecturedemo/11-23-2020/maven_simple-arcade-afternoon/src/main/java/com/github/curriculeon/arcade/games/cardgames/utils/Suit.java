@@ -1,32 +1,22 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
-import java.awt.*;
-
 public enum Suit {
-    HEARTS(true),
-    DIAMONDS(true),
-    SPADES,
-    CLUBS;
+    HEARTS("red"),
+    DIAMONDS("red"),
+    SPADES("black"),
+    CLUBS("black");
 
-    private final boolean isRed;
+    private final String color;
 
-    Suit() {
-        this(false);
-    }
-
-    Suit(boolean isRed) {
-        this.isRed = isRed;
+    Suit(String color) {
+        this.color = color;
     }
 
     public String getColor() {
-        if(isRed()) {
-            return "RED";
-        } else {
-            return "BLACK";
-        }
+        return this.color;
     }
 
     public boolean isRed() {
-        return isRed;
+        return "red".equalsIgnoreCase(getColor());
     }
 }

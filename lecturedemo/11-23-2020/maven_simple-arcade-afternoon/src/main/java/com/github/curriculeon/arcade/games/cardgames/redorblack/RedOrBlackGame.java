@@ -34,7 +34,7 @@ public class RedOrBlackGame extends AbstractGame<RedOrBlackPlayer> {
             boolean userInputIsRed = "red".equalsIgnoreCase(userInput);
             boolean userInputIsBlack = "black".equalsIgnoreCase(userInput);
             boolean userInputIsValid = userInputIsRed || userInputIsBlack;
-            boolean cardIsRed = getCard().isRed();
+            boolean cardIsRed = getCard().getSuit().isRed();
             boolean userIsCorrectAboutRed = cardIsRed && userInputIsRed;
             boolean userIsCorrectAboutBlack = (!cardIsRed) && userInputIsBlack;
             boolean userIsCorrect = userIsCorrectAboutBlack || userIsCorrectAboutRed;

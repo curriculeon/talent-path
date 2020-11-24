@@ -3,7 +3,7 @@ package com.github.curriculeon.arcade.games.cardgames.utils;
 import java.util.Collections;
 import java.util.Stack;
 
-public class Deck {
+public class Deck implements Cloneable {
     private final Stack<Card> cardStack;
 
     public Deck() {
@@ -31,8 +31,12 @@ public class Deck {
         return cardStack.pop();
     }
 
-
     public void shuffle() {
         Collections.shuffle(cardStack);
+    }
+
+    @Override
+    public Deck clone() {
+        return new Deck(cardStack);
     }
 }

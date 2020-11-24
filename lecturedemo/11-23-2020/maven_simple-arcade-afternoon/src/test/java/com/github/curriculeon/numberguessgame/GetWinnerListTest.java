@@ -45,6 +45,5 @@ public class GetWinnerListTest {
 
         // then
         Assert.assertTrue(winnerList.contains(numberGuessPlayer));
-
     }
 }

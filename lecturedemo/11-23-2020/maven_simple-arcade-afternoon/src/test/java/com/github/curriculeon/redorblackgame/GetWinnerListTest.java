@@ -1,4 +1,4 @@
-package com.github.curriculeon.redorblack.redorblackgame;
+package com.github.curriculeon.redorblackgame;
 
 import com.github.curriculeon.arcade.ArcadeAccount;
 import com.github.curriculeon.arcade.games.AbstractGame;

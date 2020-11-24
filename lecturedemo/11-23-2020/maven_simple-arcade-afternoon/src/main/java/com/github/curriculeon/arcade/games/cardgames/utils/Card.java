@@ -1,6 +1,6 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
-public class Card {
+public class Card implements Comparable<Card> {
     private final Suit suit;
     private final Rank rank;
 
@@ -17,15 +17,16 @@ public class Card {
         return rank;
     }
 
-    public Boolean isRed() {
-        return suit.isRed();
-    }
-
     @Override
     public String toString() {
         return rank
                 .name()
                 .concat(" of ")
                 .concat(suit.name());
+    }
+
+    @Override
+    public int compareTo(Card card) {
+        return this.getRank().getPrimaryValue() - card.getRank().getPrimaryValue();
     }
 }
