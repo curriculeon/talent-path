@@ -1,7 +1,5 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
-import java.awt.*;
-
 public class Card {
     private final Suit suit;
     private final Rank rank;
