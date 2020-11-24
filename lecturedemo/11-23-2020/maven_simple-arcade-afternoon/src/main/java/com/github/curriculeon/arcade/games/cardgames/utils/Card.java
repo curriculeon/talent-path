@@ -30,8 +30,4 @@ public class Card {
                 .concat(" of ")
                 .concat(suit.name());
     }
-
-    public String getColor() {
-        return suit.getColor();
-    }
 }

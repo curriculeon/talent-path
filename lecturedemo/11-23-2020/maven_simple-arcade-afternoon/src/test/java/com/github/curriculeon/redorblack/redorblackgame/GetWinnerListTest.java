@@ -27,7 +27,7 @@ public class GetWinnerListTest {
         RedOrBlackPlayer redOrBlackPlayer = new RedOrBlackPlayer(new ArcadeAccount("leon", "hunter")) {
             @Override
             public IOConsole getIOConsole(AnsiColor color, InputStream inputStream, PrintStream printStream) {
-                String userInput = redOrBlackGame.getCard().getColor();
+                String userInput = redOrBlackGame.getCard().getSuit().getColor();
                 byte[] inputBytes = userInput.getBytes();
                 ByteArrayInputStream inputByteArray = new ByteArrayInputStream(inputBytes);
                 IOConsole console = new IOConsole(color, inputByteArray, printStream) {
