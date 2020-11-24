@@ -37,10 +37,12 @@ public class GetWinnerListTest {
             }
         };
         numberGuessGame.add(numberGuessPlayer);
+        List<NumberGuessPlayer> winnerList = numberGuessGame.getWinnerList();
+        Assert.assertFalse(winnerList.contains(numberGuessPlayer));
         numberGuessGame.run();
 
         // when
-        List<NumberGuessPlayer> winnerList = numberGuessGame.getWinnerList();
+        winnerList = numberGuessGame.getWinnerList();
 
         // then
         Assert.assertTrue(winnerList.contains(numberGuessPlayer));
