@@ -1,9 +1,10 @@
 package com.github.curriculeon.arcade.games.cardgames.utils;
 
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.Stack;
 
-public class Deck implements Cloneable {
+public class Deck implements Cloneable, Iterable<Card> {
     private final Stack<Card> cardStack;
 
     public Deck() {
@@ -37,6 +38,21 @@ public class Deck implements Cloneable {
 
     @Override
     public Deck clone() {
-        return new Deck(cardStack);
+        Stack<Card> newStack = new Stack<>();
+        cardStack.forEach(newStack::push);
+        return new Deck(newStack);
+    }
+
+    @Override
+    public Iterator<Card> iterator() {
+        return cardStack.iterator();
+    }
+
+    public int size() {
+        return cardStack.size();
+    }
+
+    public Stack<Card> getStack() {
+        return cardStack;
     }
 }

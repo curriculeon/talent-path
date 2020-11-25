@@ -27,10 +27,10 @@ public class HighLowGame extends AbstractGame<HighLowPlayer> {
         String userInput = null;
         for (HighLowPlayer player : getPlayerList()) {
             Card visibleCard = getDeck().pop();
-            int visibleCardValue = visibleCard.getRank().getPrimaryValue();
             console.println("The current visible card is [ %s ]", visibleCard);
             userInput = player.play();
             Card cardToCompareAgainst = getDeck().pop();
+            int visibleCardValue = visibleCard.getRank().getPrimaryValue();
             int cardToCompareAgainstValue = cardToCompareAgainst.getRank().getPrimaryValue();
             boolean isCardToCompareAgainstEqual = cardToCompareAgainstValue == visibleCardValue;
             boolean isCardToCompareAgainstHigher = cardToCompareAgainstValue > visibleCardValue;
