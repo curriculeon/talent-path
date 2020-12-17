@@ -1,0 +1,53 @@
+Week,Day Ordinal,Day of Week,Date of Delivery,Start Time,End Time,Duration,Lesson Title,Resource
+1,1,Monday,11/10/2020,8:00 AM,8:30 AM,0:30:00,Lecture: Types & Operators,https://curriculeon.github.io/Curriculeon/lectures/java/fundamental-programming-structures/types/lecture.html#/
+1,1,Monday,11/10/2020,8:30 AM,9:00 AM,0:30:00,Lecture: Control Flow,https://curriculeon.github.io/Curriculeon/lectures/java/fundamental-programming-structures/control-flow/lecture.html#/1
+1,1,Monday,11/10/2020,9:00 AM,9:15 AM,0:15:00,Walkthrough: Types & Operators,https://github.com/curriculeon/talent-path/tree/master/lecturedemo/11-09-2020/maven.java-fundamentals
+1,1,Monday,11/10/2020,9:15 AM,9:30 AM,0:15:00,Walkthrough: Control Flow,https://github.com/curriculeon/talent-path/tree/master/lecturedemo/11-09-2020/maven.numbers-triangles-tables
+1,1,Monday,11/10/2020,4:00 PM,4:15 PM,0:15:00,Review: Types & Operators,https://github.com/curriculeon/maven.java-fundamentals
+1,1,Monday,11/10/2020,4:15 PM,5:00 PM,0:45:00,Review: Control Flow,https://github.com/curriculeon/maven.numbers-triangles-tables
+1,2,Tuesday,11/11/2020,8:00 AM,9:30 AM,1:30:00,Walkthrough: Creating and testing a CRUD Application,https://github.com/curriculeon/talent-path/tree/master/lecturedemo/11-10-2020/my-first-CRUD-webserver
+1,2,Tuesday,11/11/2020,4:00 PM,4:20 PM,0:20:00,Review: Creating and testing a CRUD Application,https://github.com/curriculeon/talent-path/tree/master/lecturedemo/11-10-2020/my-first-CRUD-webserver
+1,2,Tuesday,11/11/2020,4:20 PM,4:40 PM,0:20:00,Lecture: Intro to Generics,https://curriculeon.github.io/Curriculeon/lectures/java/generics/defining-generic-classes/lecture.html#/
+1,2,Tuesday,11/11/2020,4:40 PM,5:00 PM,0:20:00,Walkthrough: Learner Lab; Part 1 through 4,https://github.com/curriculeon/maven_learnerlab
+1,3,Wednesday,11/12/2020,8:30 AM,9:00 AM,0:30:00,Overview: Learrner Lab Pab; Part 1 through 4,https://github.com/curriculeon/maven_learnerlab
+1,3,Wednesday,11/12/2020,9:00 AM,9:30 AM,0:30:00,Continuous Integration Demonstration,https://curriculeon.github.io/Curriculeon/lectures/ci-cd/travis-ci/configuring-maven-project/content.html
+1,3,Wednesday,11/12/2020,9:30 AM,10:00 AM,0:30:00,Walkthrough: Learner Lab; Part 4 through 6,https://github.com/curriculeon/talent-path/commit/ef57015a2464ca7363eccc3d8f4e06d93d42f07b
+1,3,Wednesday,11/12/2020,10:00 AM,10:30 AM,0:30:00,Lecture: Object Relations,https://curriculeon.github.io/Curriculeon/lectures/java/object-oriented-programming/object-relations/lecture.html#/
+1,3,Wednesday,11/12/2020,10:00 AM,11:00 AM,1:00:00,Walkthrough: Learner Lab; Part 6 through 7.1,https://github.com/curriculeon/talent-path/commit/d88703674e37fda3e2914dd8c52c6f9f3349a035
+1,3,Wednesday,11/12/2020,1:00 PM,1:15 PM,0:15:00,"Walkthrough: Intro to Enums, Part 1",https://github.com/curriculeon/talent-path/commit/93a1779333ecf1b7933bb092178ad6c2087abb3d
+1,3,Wednesday,11/12/2020,1:15 PM,1:30 PM,0:15:00,"Walkthrough: Intro to Enums, Part 2",https://github.com/curriculeon/talent-path/commit/092faa7b33a7f5050aee10381bf022252a80fd16
+1,3,Wednesday,11/12/2020,1:30 PM,1:45 PM,0:15:00,Walkthrough: Maps; Dictionaries; Associative Arrays,https://github.com/curriculeon/talent-path/commit/57bdc937e362110ffebba0e6c464652b7a5e3978
+1,3,Wednesday,11/12/2020,1:45 PM,2:30 PM,0:45:00,Walkthrough: Learner Lab; Part 7 through 10,https://github.com/curriculeon/talent-path/commit/123c70553be0b8e846695ef997eebfeb1f662af6
+1,4,Thursday,11/13/2020,8:00 AM,8:15 AM,0:15:00,Overview: Learrner Lab Pab; Part 7 through 10,https://github.com/curriculeon/talent-path/commit/074a90f31460359d6a7c610c6194282701334b2c
+1,4,Thursday,11/13/2020,8:15 AM,8:45 AM,0:30:00,Walkthrough: Learner Lab; Part 10 through 12,https://github.com/curriculeon/talent-path/commit/074a90f31460359d6a7c610c6194282701334b2c
+1,4,Thursday,11/13/2020,4:00 PM,4:25 PM,0:25:00,Migrating pipeline from TravisCi.com to TravisCi.org,https://curriculeon.github.io/Curriculeon/lectures/ci-cd/travis-ci/configuring-maven-project/content.html
+1,4,Thursday,11/13/2020,4:25 PM,4:55 PM,0:30:00,Lecture on Functional Interfaces,https://curriculeon.github.io/Curriculeon/lectures/java/java8/functional-interfaces/lecture.html#/2
+1,4,Thursday,11/13/2020,4:55 PM,5:00 PM,0:05:00,streams and lambdas,https://github.com/curriculeon/talent-path/commit/099c65a7fbe593521755283ba0aef8d54b1262b2
+1,5,Friday,11/14/2020,8:00 AM,8:30 AM,0:30:00,Dice and Bin Lab,https://github.com/curriculeon/maven.diceandbin
+1,5,Friday,11/14/2020,8:30 AM,9:00 AM,0:30:00,Streams,https://github.com/curriculeon/maven_streams-and-lambdas
+1,5,Friday,11/14/2020,9:00 AM,9:15 AM,0:15:00,My first Repository,https://curriculeon.github.io/Curriculeon/lectures/version-control-systems/git/my-first-repository/content.html
+1,5,Friday,11/14/2020,9:15 AM,9:30 AM,0:15:00,My first Github Page,https://curriculeon.github.io/Curriculeon/lectures/version-control-systems/git/my-first-githubpage/content.html
+2,6,Monday,11/15/2020,8:00 AM,9:30 AM,1:30:00,Walkthrough: Dice and Bin,https://github.com/curriculeon/talent-path/commit/6cc45aa5a0d5e97c7464afcdc6e49cfcaa3e319c
+2,6,Monday,11/15/2020,4:00 PM,5:00 PM,1:00:00,Provided with Streams and Lambdas,https://github.com/curriculeon/maven_streams-and-lambdas
+2,7,Tuesday,11/16/2020,8:00 AM,9:30 AM,1:30:00,Streams and lambdas lecture demonstration,https://github.com/curriculeon/talent-path/commit/45057053e974abb5ec676af2b9f3a21797311df0
+2,7,Tuesday,11/16/2020,4:00 PM,5:00 PM,1:00:00,Streams and lambdas exercise demonstration,https://github.com/curriculeon/talent-path/commit/4ea93e7be11e4ff391dfc46b400227258b31893a
+2,8,Wednesday,11/17/2020,8:00 AM,8:15 AM,0:15:00,Arcade Walkthrough: Creating a player,https://github.com/curriculeon/talent-path/commit/23ffa7491295ab1a4f8772e6c6d4c4e003afaa6a
+2,8,Wednesday,11/17/2020,8:15 AM,8:30 AM,0:15:00,default method implementation walkthrough,
+2,8,Wednesday,11/17/2020,8:30 AM,8:45 AM,0:15:00,exceptions lecture demonstration,https://github.com/curriculeon/talent-path/commit/4ea93e7be11e4ff391dfc46b400227258b31893a
+2,8,Wednesday,11/17/2020,8:45 AM,9:00 AM,0:15:00,exceptions lecture,
+2,8,Wednesday,11/17/2020,9:00 AM,9:15 AM,0:15:00,exceptions PhoneNumberFactory exercise,https://github.com/curriculeon/maven.exceptional-phone-number
+2,8,Wednesday,11/17/2020,9:15 AM,9:30 AM,0:15:00,SOLID Design Principles Lecture,https://curriculeon.github.io/Curriculeon/lectures/java/design-principles/design-patterns/lecture.html
+2,9,Thursday,11/18/2020,8:00 AM,9:30 AM,1:30:00,Design Pattens Lecture,https://curriculeon.github.io/Curriculeon/lectures/java/design-principles/design-patterns/lecture.html
+2,9,Thursday,11/18/2020,4:00 PM,5:00 PM,1:00:00,"Arcade Walkthrough: NumberGuess, SlotsReel",https://github.com/curriculeon/talent-path/commit/ec7f3c4fd95f13756de37e0b527a635921a433f3
+2,10,Friday,11/19/2020,8:00 AM,9:00 AM,1:00:00,Arcade Walkthrough: RedOrBlack,https://github.com/curriculeon/talent-path/commit/9c19f1aa9706cd7906535092b48802eb844c2738
+2,10,Friday,11/19/2020,9:00 AM,9:30 AM,0:30:00,Arcade Walkthrough: Abstracting Arcade,https://github.com/curriculeon/talent-path/commit/00d8f9fef3e95a9807baa780ebe9e05a4e22a4ca
+2,10,Friday,11/19/2020,4:00 PM,5:00 PM,1:00:00,Arcade Walkthrough: Abstracting Arcade,https://github.com/curriculeon/talent-path/commit/15dd31e3888406186e81c5c16c54967a1b2e0e2e
+2,10,Friday,11/19/2020,4:00 PM,5:00 PM,1:00:00,Arcade Walkthrough: HighLow implementation,https://github.com/curriculeon/talent-path/commit/9b8f26ac3ec496062186b74d308969338ec5186d
+3,11,Monday,11/20/2020,8:00 AM,9:00 AM,1:00:00,Testing NumberGuessGame,https://github.com/curriculeon/talent-path/commit/a4aface2c9860b3e2b82dfa9beceb861ba0fd47f
+3,11,Monday,11/20/2020,4:00 PM,5:00 PM,1:00:00,Testing RedOrBlackGame,https://github.com/curriculeon/talent-path/commit/31434f94a459f8a54fef65f356d0f75455b99257
+3,12,Tuesday,11/21/2020,8:00 AM,9:00 AM,1:00:00,Testing HighLowGame,https://github.com/curriculeon/talent-path/commit/8407b96e508682ee48e64a86e9b99bbea41c29bd
+3,12,Tuesday,11/21/2020,4:00 PM,5:00 PM,1:00:00,Testing HighLowGame,https://github.com/curriculeon/talent-path/commit/8407b96e508682ee48e64a86e9b99bbea41c29bd
+3,13,Wednesday,11/22/2020,8:00 AM,9:00 AM,1:00:00,Leet Code Challenge,https://github.com/curriculeon/talent-path/commit/6eb1dd8c2deb85942f8d17a33addae77e0808532
+3,13,Wednesday,11/22/2020,4:00 PM,5:00 PM,1:00:00,Review; Reminder to do final updates on each project,
+,,,,,,,,
+,,,,,Total Hours,31:15:00,,
